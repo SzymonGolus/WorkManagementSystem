@@ -1,0 +1,35 @@
+{% include "menu.html" %}
+
+<div class="container-fluid">
+  <br>
+<h2>Fill the formular - add new client</h2>
+
+<form method="POST" action="{{ url_for('clients') }}">
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="firm">
+    <label for="floatingInput">Firm / Client name</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="adress">
+    <label for="floatingInput">Adress</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="nip">
+    <label for="floatingInput">NIP</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="contact_person">
+    <label for="floatingInput">Contact person</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" placeholder="phone">
+    <label for="floatingInput">Phone number</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="email">
+    <label for="floatingInput">Email adress</label>
+  </div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</form>
