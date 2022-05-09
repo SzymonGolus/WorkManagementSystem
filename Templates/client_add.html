@@ -1,35 +1,59 @@
 {% include "menu.html" %}
 
-<div class="container-fluid">
-  <br>
-<h2>Fill the formular - add new client</h2>
+<br>
 
-<form method="POST" action="{{ url_for('clients') }}">
-<div class="form-floating mb-3">
-    <input type="text" class="form-control" id="floatingInput" placeholder="firm">
-    <label for="floatingInput">Firm / Client name</label>
-  </div>
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" id="floatingInput" placeholder="adress">
-    <label for="floatingInput">Adress</label>
-  </div>
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" id="floatingInput" placeholder="nip">
-    <label for="floatingInput">NIP</label>
-  </div>
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" id="floatingInput" placeholder="contact_person">
-    <label for="floatingInput">Contact person</label>
-  </div>
-  <div class="form-floating mb-3">
-    <input type="text" class="form-control" id="floatingInput" placeholder="phone">
-    <label for="floatingInput">Phone number</label>
-  </div>
-  <div class="form-floating mb-3">
-    <input type="email" class="form-control" id="floatingInput" placeholder="email">
-    <label for="floatingInput">Email adress</label>
-  </div>
 
-<button type="submit" class="btn btn-primary">Submit</button>
-</div>
-</form>
+<center>
+
+  <form  method='POST' action='#'>
+  <div class="container">
+    <h2>Fill the formular - add new client</h2>
+    <div class="row">
+      <div class="col-8 form-floating mb-3">
+    <input type="text" class="form-control" id="firm" name="firm" placeholder="firm">
+      <label for="floatingInput">Firm / Customer name:</label>	
+      </div>
+      <div class="col-4 form-floating mb-3">
+    <input type="" class="form-control" id="nip" name="nip" placeholder="nip">
+      <label for="floatingInput">NIP:</label>	
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6 form-floating mb-3">
+    <input type="text" class="form-control" id="adress" name="adress" placeholder="adress">
+      <label for="floatingInput">Adress:</label>	
+      </div>
+      <div class="col-3 form-floating mb-3">
+    <input type="text" class="form-control" id="zip_code" name="zip_code" placeholder="zip_code">
+      <label for="floatingInput">ZIP code:</label>	
+      </div>
+      <div class="col-3 form-floating mb-3">
+    <input type="text" class="form-control" id="city" name="city" placeholder="city">
+      <label for="floatingInput">City:</label>	
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 form-floating mb-3">
+    <input type="text" class="form-control" id="contact_person" name="contact_person" placeholder="contact_person">
+      <label for="floatingInput">Contact person:</label>	
+      </div>
+      <div class="col-4 form-floating mb-3">
+    <input type="text" class="form-control" id="email" name="email" placeholder="email">
+      <label for="floatingInput">E-mail adress:</label>	
+      </div>
+      <div class="col-4 form-floating mb-3">
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="phone">
+      <label for="floatingInput">Phone number:</label>	
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 form-floating mb-3">
+    <input type="text" class="form-control" style="height: 100px" id="comment" name="comment" placeholder="comment">
+      <label for="floatingInput">Comment:</label>	
+      </div>
+    </div>
+  </div>
+  <input class="btn btn-outline-primary" type="submit" value="Add / save a client">
+  </form>
+  </center>
+
