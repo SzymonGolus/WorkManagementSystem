@@ -18,3 +18,19 @@ def client_add():
 
         return body
         # Client added information
+
+@app.route('/clients', methods=['POST'])
+def clients():
+    pass
+
+@app.route('/order_add', methods=['POST'])
+def order_add():
+    pass
+
+@app.route('/orders', methods=['POST'])
+def orders(status):
+    pass
+
+@app.route('/tasks', methods=['POST'])
+def tasks():
+    pass
